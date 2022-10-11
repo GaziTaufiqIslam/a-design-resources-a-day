@@ -1,0 +1,60 @@
+<section id="explore" class="res-list bg-slate-100 py-16">
+    <div class="grid gap-6 content max-w-7xl w-11/12 mx-auto justify-items-center">
+        <img src="../../assets/img/icon-with-bg-pink.svg" alt="Find What You Need Icon" class="section-icon">
+        <h3 class="text-xl md:text-3xl font-semibold text-center text-slate-800">Find Exactly What You Need</h3>
+        <h5 class="text-lg md:text-xl font-normal text-center text-slate-600">Browse from the huge of list of design resources curated just for you.</h5>
+        <form class="relative w-full max-w-sm">
+            <label for="search" class="hidden">Search</label>
+            <div class="flex absolute items-center h-full left-5 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+
+            </div>
+                <input class="block w-full px-12 py-3 border  border-solid border-slate-300 rounded-md outline-none text-slate-500 text-sm font-medium placeholder:font-medium placeholder-slate-500" type="search" id="quick-search" placeholder="Quick Search" required/>
+            <div class="absolute h-full pointer-events-none right-5 top-0 flex items-center text-slate-500 text-sm font-medium">
+                <p>Ctrl G</p>
+            </div>
+        </form>
+        <div class="wrapper grid items-center">
+            <div class="overflow-x-auto w-full whitespace-nowrap pb-2">
+                <div class="filter-tags chips gap-2 flex-nowrap items-start">
+
+                    <button data-attr="All" class="chip chip-lg chip-active">All</button>
+                    {% for tag in airtableFields %}
+                    <button data-attr='{{tag}}' class="chip chip-lg">{{tag}}</button>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+
+        <ul class="list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch gap-8 w-full">
+            <p class="search-alert col-span-full text-center hidden text-lg md:text-2xl font-bold text-slate-800">No Results</p>
+                {% for ad in sponsored %}
+                <li class="sponsored-card bg-white rounded-md overflow-hidden h-full">
+                    <a href={{ ad.url }}>
+                    <img class="card-image w-full h-48 object-cover" src="assets/img/ad-bg-02.jpg" alt="Ad Screenshot">
+                    <div class="content p-6 pt-4">
+                        <div class="content-header grid items-center">
+                            <div class="chips gap-2">
+                                {% for chip in ad.tags %}
+                                <button class="chip" data-attr="ad">{{ chip }}</button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="content-title pt-4 pb-1">
+                            <h3 class="text-base font-semibold">{{ ad.title }}</h3>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+
+                {% endfor %}
+
+            {% include "partials/_res-listing.njk" %}
+        </ul>
+
+    </div>
+</section>

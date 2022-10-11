@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Explore",
+        "url" : "/#explore"
+    },
+    {
+        "name" : "Submit",
+        "url" : "/submit-resource"
+    },
+    {
+        "name" : "Contact",
+        "url" : "/contact"
+    },
+    {
+        "name" : "Buy Me a Coffee",
+        "url" : "https://www.buymeacoffee.com/gazitaufiq"
+    },
+    {
+        "name" : "Terms",
+        "url" : "/terms"
+    },
+    {
+        "name" : "Privacy",
+        "url" : "/privacy"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name" : "Explore",
+        "url" : "/#explore"
+    },
+    {
+        "name" : "Submit Resource",
+        "url" : "/submit-resource"
+    }
+]

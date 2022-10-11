@@ -1,0 +1,29 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_17_1607)">
+<rect width="64" height="64" rx="32" fill="#FCE7F3"/>
+<path d="M1.5 -9V13V-9ZM-9 2H12H-9Z" stroke="#FBCFE8"/>
+<path d="M1.5 32V54V32ZM-9 43H12H-9Z" stroke="#FBCFE8"/>
+<path d="M1.5 10V32V10ZM-9 21H12H-9Z" stroke="#FBCFE8"/>
+<path d="M1.5 51V73V51ZM-9 62H12H-9Z" stroke="#FBCFE8"/>
+<path d="M22 -9V13V-9ZM12 2H32H12Z" stroke="#FBCFE8"/>
+<path d="M22 32V54V32ZM12 43H32H12Z" stroke="#FBCFE8"/>
+<path d="M22 10V32V10ZM12 21H32H12Z" stroke="#FBCFE8"/>
+<path d="M22 51V73V51ZM12 62H32H12Z" stroke="#FBCFE8"/>
+<path d="M42.5 -9V13V-9ZM32 2H53H32Z" stroke="#FBCFE8"/>
+<path d="M42.5 32V54V32ZM32 43H53H32Z" stroke="#FBCFE8"/>
+<path d="M42.5 10V32V10ZM32 21H53H32Z" stroke="#FBCFE8"/>
+<path d="M42.5 51V73V51ZM32 62H53H32Z" stroke="#FBCFE8"/>
+<path d="M63 -9V13V-9ZM53 2H73H53Z" stroke="#FBCFE8"/>
+<path d="M63 32V54V32ZM53 43H73H53Z" stroke="#FBCFE8"/>
+<path d="M63 10V32V10ZM53 21H73H53Z" stroke="#FBCFE8"/>
+<path d="M63 51V73V51ZM53 62H73H53Z" stroke="#FBCFE8"/>
+</g>
+<rect x="2" y="2" width="60" height="60" rx="30" stroke="white" stroke-width="4"/>
+<path d="M28.8 32C28.8 30.6745 29.8745 29.6 31.2 29.6C32.5255 29.6 33.6 30.6745 33.6 32C33.6 32.6631 33.3327 33.2614 32.8971 33.6971C32.4614 34.1327 31.8631 34.4 31.2 34.4C29.8745 34.4 28.8 33.3255 28.8 32Z" fill="#DB2777"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.2 19.2C21.8745 19.2 20.8 20.2745 20.8 21.6V42.4C20.8 43.7255 21.8745 44.8 23.2 44.8H40.8C42.1255 44.8 43.2 43.7255 43.2 42.4V28.1941C43.2 27.5576 42.9472 26.9472 42.4971 26.4971L35.9029 19.903C35.4529 19.4529 34.8424 19.2 34.2059 19.2H23.2ZM31.2 27.2C28.549 27.2 26.4 29.349 26.4 32C26.4 34.651 28.549 36.8 31.2 36.8C32.0897 36.8 32.9237 36.5573 33.6382 36.1353L35.5515 38.0485C36.0201 38.5172 36.7799 38.5172 37.2485 38.0485C37.7172 37.5799 37.7172 36.8201 37.2485 36.3515L35.3352 34.4382C35.7573 33.7237 36 32.8897 36 32C36 29.349 33.851 27.2 31.2 27.2Z" fill="#DB2777"/>
+<defs>
+<clipPath id="clip0_17_1607">
+<rect width="64" height="64" rx="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

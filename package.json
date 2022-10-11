@@ -1,0 +1,28 @@
+{
+  "name": "a-design-resources-a-day",
+  "version": "1.0.0",
+  "description": "A website which shows a trending and new design resources each day.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "styles": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./_site/assets/styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaziTaufiqIslam/a-design-resources-a-day.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaziTaufiqIslam/a-design-resources-a-day/issues"
+  },
+  "homepage": "https://github.com/GaziTaufiqIslam/a-design-resources-a-day#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "airtable-json": "^2.1.2"
+  }
+}

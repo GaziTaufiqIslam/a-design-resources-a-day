@@ -1,0 +1,23 @@
+<section id="current-rsc" class="current-res py-12 md:py-16">
+    <div class="content grid grid-cols-1 md:grid-cols-2 auto-rows-min grid-flow-dense gap-6 max-w-7xl w-11/12 mx-auto items-center">
+        <div class="content-header self-end">
+            <img class="section-icon" src="/assets/img/icon-with-bg-blue.svg" alt="New File Addition Icon">
+            <div class="header-main mt-6 grid gap-2 items-baseline text-slate-600">
+                <h2 class="text-base md:text-lg font-semibold text-blue-600">Design Resource of the Day</h2>
+                <span class="font-semibold">&#183;</span>
+                <p class="header-date text-xs md:text-sm font-normal">{{ helpers.changeDateToFriendly(airtable[0].fields.date) | safe }}</p>
+            </div>
+        </div>
+        <img  class="content-screenshot row-span-2 justify-self-stretch w-full max-h-80 md:max-h-screen object-cover" src={{ airtable[0].fields.img[0].url }} alt="Product Images">
+        <div class="content-main grid auto-rows-min gap-4 justify-items-start self-start">
+            <div class="chips gap-2">
+                {% for tag in airtable[0].fields.tags %}
+                <button class="chip" data-attr={{tag}}>{{tag}}</button>
+                {% endfor %}
+            </div>
+            <h3 class="text-2xl md:text-4xl font-bold">{{ airtable[0].fields.title }}</h3>
+            <p class="text-sm md:text-base font-semibold text-slate-600"><span class="text-xs md:text-sm font-normal leading-6">by </span>{{ airtable[0].fields.author }}</p>
+            <a href='{{ airtable[0].fields.link }}' class="btn btn-filled-secondary mt-2 w-auto" target="_blank">Get This Resource</a>
+        </div>
+    </div>
+</section>
